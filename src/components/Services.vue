@@ -8,7 +8,7 @@
         v-for="service in services"
         :key="service.name"
       >
-        <figure class="image is-square">
+        <figure class="image is-square is-responsive">
           <figcaption v-text="service.name"></figcaption>
           <img class :src="`../../static/images/services/${service.image}`">
         </figure>
@@ -42,10 +42,10 @@ export default {
 <style lang="scss">
 @import "../assets/scss/bootstrap.scss";
 .service-container {
-  $image-size: 1pc;
+  $image-size: 128px;
 
   flex-direction: column;
-  padding: 2em 1em;
+  padding: 2em 1em 2.3em;
 
   .title {
     text-transform: capitalize;
@@ -68,7 +68,7 @@ export default {
           padding: 0.3em 0;
           font-weight: 700;
           color: $dark;
-          font-size: 1pc;
+          font-size: 1vw;
         }
       }
     }
