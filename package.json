@@ -6,13 +6,14 @@
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
-    "start": "node src/poop.js",
+    "start": "node src/server.js",
     "build": "node build/build.js",
     "heroku-postbuild": "npm install --only=dev --no-shrinkwrap && npm run build"
   },
   "dependencies": {
     "bulma": "^0.7.2",
     "express": "^4.16.4",
+    "node-sass": "^4.11.0",
     "os": "^0.1.1",
     "serve-static": "^1.13.2",
     "vue": "^2.5.2",
