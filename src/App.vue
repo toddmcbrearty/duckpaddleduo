@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="main container">
     <logo class="has-background-company-light"/>
     <call-board/>
     <services class="has-background-company-light"/>
@@ -13,17 +13,13 @@
       />
     </div>
 
-    <div class="new-section">
-      <contact class="has-background-company-light"/>
+    <div class="new-section container columns">
+      <div class="column is-8 is-offset-2">
+        <contact-form :services="services"></contact-form>
+      </div>
     </div>
 
-    <footer class="footer">
-      <div class="content has-text-centered">
-        <p>
-          <strong>Duck Paddle Duo</strong>
-        </p>
-      </div>
-    </footer>
+    <big-footer :company="company"></big-footer>
   </div>
 </template>
 
@@ -32,19 +28,25 @@ import CallBoard from "./components/CallBoard";
 import Logo from "./components/Logo";
 import Services from "./components/Services";
 import HeroSection from "./components/HeroSection";
-import Contact from "./components/Contact";
+import ContactForm from "./components/ContactForm";
+import BigFooter from "./components/BigFooter";
 
 import store from "./store.js";
 
 export default {
   name: "App",
 
-  components: { CallBoard, Logo, Services, HeroSection, Contact },
+  components: {
+    CallBoard,
+    Logo,
+    Services,
+    HeroSection,
+    ContactForm,
+    BigFooter
+  },
 
   data() {
-    return {
-      services: store.services
-    };
+    return { ...store };
   }
 };
 </script>
@@ -57,6 +59,10 @@ export default {
   flex-direction: column;
 }
 .new-section {
-  margin: 1em 0;
+  padding: 2em 0;
+}
+
+.main {
+  background: $company;
 }
 </style>

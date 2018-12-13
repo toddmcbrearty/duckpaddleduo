@@ -1,18 +1,20 @@
 <template>
   <div class="is-flex service-container">
-    <div class="title has-text-centered">Services</div>
-    <div class="columns services">
-      <a
-        :href="`#detail-section-${service.name}`"
-        class="is-2 is-1-mobile service"
-        v-for="service in services"
-        :key="service.name"
-      >
-        <figure class="image is-square is-responsive">
-          <figcaption v-text="service.name"></figcaption>
-          <img class :src="`../../static/images/services/${service.image}`">
-        </figure>
-      </a>
+    <div>
+      <div class="title has-text-centered">Services</div>
+      <div class="columns services">
+        <a
+          :href="`#detail-section-${service.name}`"
+          class="is-2 is-1-mobile service"
+          v-for="service in services"
+          :key="service.name"
+        >
+          <figure class="image is-1by1">
+            <figcaption v-text="service.name"></figcaption>
+            <img class :src="`../../static/images/services/${service.image}`">
+          </figure>
+        </a>
+      </div>
     </div>
   </div>
 </template>
@@ -42,7 +44,7 @@ export default {
 <style lang="scss">
 @import "../assets/scss/bootstrap.scss";
 .service-container {
-  $image-size: 128px;
+  $image-size: 10vw;
 
   flex-direction: column;
   padding: 2em 1em 2.3em;
@@ -68,7 +70,7 @@ export default {
           padding: 0.3em 0;
           font-weight: 700;
           color: $dark;
-          font-size: 1vw;
+          font-size: 0.9vw;
         }
       }
     }

@@ -62,10 +62,10 @@ $height: 400px;
   justify-self: center;
   height: $height;
   margin: 0.5em auto;
+  background: white;
 
   .text {
-    background: white;
-    flex: 0 0 50%;
+    flex: 0 0 58%;
     font-size: 1.3rem;
     font-weight: 300;
     font-style: italic;
@@ -105,7 +105,7 @@ $height: 400px;
 
     .image {
       z-index: 1;
-      flex: 0 0 50%;
+      flex: 0 0 100%;
       width: 100%;
       height: 100%;
       overflow: hidden;
