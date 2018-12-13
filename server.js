@@ -16,7 +16,7 @@ app.use(express.static(publicDir));
 // set the home page route
 app.get('/', function(req, res) {
   // ejs render automatically looks in the views folder
-  res.sendFile(publicDir + 'index.html');
+  res.sendFile(publicDir + '/index.html');
 });
 
 app.listen(port, function() {
