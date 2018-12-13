@@ -8,7 +8,7 @@ const publicDir = __dirname + '/../dist';
 
 // set the home page route
 app.get('/', function(req, res) {
-  res.sendFile('index.html');
+  res.sendFile('./index.html');
 });
 
 app.listen(port, function() {
