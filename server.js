@@ -7,9 +7,6 @@ const port = process.env.PORT || 8080;
 const host = '0.0.0.0';
 const publicDir = __dirname + '/../dist';
 
-app.set('view engine', 'ejs');
-app.set('views', publicDir);
-
 // make express look in the public directory for assets (css/js/img)
 app.use(express.static(publicDir));
 
