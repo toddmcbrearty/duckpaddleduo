@@ -13,6 +13,7 @@
   "dependencies": {
     "bulma": "^0.7.2",
     "express": "^4.16.4",
+    "os": "^0.1.1",
     "serve-static": "^1.13.2",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1"
