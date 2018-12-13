@@ -1,0 +1,17 @@
+@import '../../node_modules/bulma/bulma.sass';
+
+.call-to-action {
+  .title {
+    font-family: 'Condiment', cursive;
+  }
+
+  .home-logo {
+    width: 4em;
+    height: 4em;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

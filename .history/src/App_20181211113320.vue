@@ -1,0 +1,53 @@
+<template>
+  <section class="hero is-warning is-large">
+    <div class="hero-body">
+      <div class="is-flex">
+        <span class="title-container is-flex">
+          <figure class="logo-image">
+            <img src="./assets/duck-head.svg" class="logo-image">
+          </figure>
+          <div class="logo-title">Duck Paddle Duo</div>
+        </span>
+      </div>
+    </div>
+  </section>
+</template>
+
+<script>
+import CallBoard from "./components/CallBoard";
+
+export default {
+  name: "App",
+
+  components: { CallBoard }
+};
+</script>
+
+<style lang="scss">
+@import "./assets/bootstrap.scss";
+
+.title-container {
+  flex: 1 1 400px;
+  $img-size: 5em;
+  $gap: 0.5em;
+  align-content: center;
+
+  .logo-image {
+    margin-right: $gap;
+  }
+
+  .logo-title {
+    align-content: center;
+
+    @include font-condiment;
+    font-size: 5em;
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
+
+  figure {
+    width: $img-size;
+    height: $img-size;
+  }
+}
+</style>

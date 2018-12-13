@@ -1,0 +1,27 @@
+@import 'bulma/sass/utilities/initial-variables.sass';
+@import 'bulma/sass/utilities/functions.sass';
+@import 'bulma/sass/utilities/derived-variables.sass';
+
+$company-1: #a3c1ad;
+$company-3: #317873;
+$company-4: #49796b;
+
+$company-light: silver;
+$company: #5f9ea0;
+
+$company-invert: findColorInvert($company);
+$company-light-invert: findColorInvert($company-light);
+
+$colors: mergeColorMaps(
+  (
+    'company': (
+      $company,
+      $company-invert,
+    ),
+    'company-light': (
+      $company-light,
+      $company-light-invert,
+    ),
+  ),
+  $custom-colors
+);

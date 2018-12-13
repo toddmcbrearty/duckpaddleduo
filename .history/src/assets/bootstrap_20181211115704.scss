@@ -1,0 +1,26 @@
+@import 'bulma/bulma.sass';
+@import url('https://fonts.googleapis.com/css?family=Condiment|Delius+Unicase:400,700|Source+Sans+Pro:300,400,700');
+
+@mixin font-condiment {
+  font-family: 'Condiment', cursive;
+}
+
+@mixin font-delius {
+  font-family: 'Delius Unicase', cursive;
+}
+
+@mixin font-source-sans {
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.font-condiment {
+  font-family: 'Condiment', cursive;
+}
+
+.font-delius {
+  font-family: 'Delius Unicase', cursive;
+}
+
+.font-source-sans {
+  font-family: 'Source Sans Pro', sans-serif;
+}

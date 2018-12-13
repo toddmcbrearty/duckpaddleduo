@@ -1,0 +1,19 @@
+<template>
+  <div class="columns">
+    <div class="col-6 text" v-html="text"></div>
+    <div class="col-6 image">
+      <img src>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  name: "Section",
+
+  props: ["text", "image"]
+};
+</script>
+
+<style scoped>
+</style>
