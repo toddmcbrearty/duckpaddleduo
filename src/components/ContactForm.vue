@@ -55,12 +55,6 @@
         </div>
       </div>
 
-      <div class="field">
-        <div class="control">
-          <recaptcha></recaptcha>
-        </div>
-      </div>
-
       <div class="field is-grouped has-text-right">
         <div class="control">
           <button class="button is-success" @click.stop="submit()">Submit</button>
@@ -74,14 +68,10 @@
 </template>
 
 <script>
-import Recaptcha from "../components/Recaptcha";
-
 import store from "../store.js";
 
 export default {
   name: "ContactForm",
-
-  components: { Recaptcha },
 
   props: ["services"],
 

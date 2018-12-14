@@ -1,10 +1,14 @@
 <template>
   <div class="logo is-flex" :class="pos">
     <span class="title-container is-flex">
-      <figure class="logo-image">
+      <figure class="logo-image is-hidden-mobile">
         <img src="../assets/images/duck-head.svg" class="logo-image">
       </figure>
-      <span class="logo-title">Duck Paddle Duo</span>
+      <span class="logo-title is-size-1 is-block-mobile">
+        <span class="logo-word is-block-mobile has-text-centered">Duck</span>
+        <span class="logo-word is-block-mobile has-text-centered">Paddle</span>
+        <span class="logo-word is-block-mobile has-text-centered">Duo</span>
+      </span>
     </span>
   </div>
 </template>
@@ -58,10 +62,14 @@ export default {
       align-content: center;
 
       @include font-delius;
-      font-size: 3rem;
       letter-spacing: normal;
       margin-bottom: 0;
       padding-bottom: 0;
+
+      &,
+      .logo-word {
+        width: 100%;
+      }
     }
 
     figure {
