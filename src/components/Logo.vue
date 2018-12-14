@@ -6,7 +6,7 @@
       </figure>
       <span class="logo-title is-size-1 is-block-mobile">
         <span class="logo-word is-block-mobile has-text-centered">Duck</span>
-        <span class="logo-word is-block-mobile has-text-centered">Paddle</span>
+        <span class="logo-word is-block-mobile has-text-centered">Puddle</span>
         <span class="logo-word is-block-mobile has-text-centered">Duo</span>
       </span>
     </span>
