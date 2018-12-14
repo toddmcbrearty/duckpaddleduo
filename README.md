@@ -1,4 +1,4 @@
-# duckpaddleduo
+# destroy
 
 > A Vue.js project
 
