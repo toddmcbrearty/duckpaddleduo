@@ -1,13 +1,13 @@
 <template>
   <div class="main container">
-    <logo class="has-background-company-light"/>
+    <logo class/>
 
-    <section class="new-section">
+    <section class="has-background-company-dark">
       <call-board/>
     </section>
 
-    <section class="new-section">
-      <services class="has-background-company-light"/>
+    <section>
+      <services/>
       <hero-section
         class="container"
         v-for="(service, index) in services"

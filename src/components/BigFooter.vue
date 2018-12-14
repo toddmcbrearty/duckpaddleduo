@@ -14,7 +14,11 @@
             <div class="contact-item">
               <div class="item-data">
                 <span :key="number" v-for="(number, index) in company.phoneNumbers">
-                  <a :href="`tel:${number}`" v-text="number" :class="{'dot': index%2 === 0}"></a>
+                  <a
+                    :href="`tel:${number}`"
+                    v-text="number"
+                    :class="{'dot': index+1 < company.phoneNumbers.length }"
+                  ></a>
                 </span>
               </div>
             </div>
@@ -37,11 +41,14 @@
 
       <div class="column is-3">
         <h2 class="subtitle is-size-4">Services</h2>
-        <ul>
-          <li v-for="service in services" :key="service.name">
-            <a :href="`#${service.name}`" class="is-link" v-text="service.name"></a>
-          </li>
-        </ul>
+        <a
+          v-for="(service, index) in services"
+          :key="service.name"
+          :href="`#${service.name}`"
+          class="is-link"
+          :class="{'dot': index+1 < services.length}"
+          v-text="service.name"
+        ></a>
       </div>
     </div>
   </footer>

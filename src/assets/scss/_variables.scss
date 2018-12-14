@@ -1,22 +1,32 @@
 @import 'bulma/sass/utilities/initial-variables.sass';
 @import 'bulma/sass/utilities/functions.sass';
 @import 'bulma/sass/utilities/derived-variables.sass';
+@import 'bulma/bulma.sass';
 
 $company-1: #a3c1ad;
 $company-3: #317873;
 $company-4: #49796b;
 
-$company-light: #e5f8ee;
 $company: #52d19d;
+$company-light: #98777b;
 
-$company-invert: #ff24ad;
-$company-light-invert: $black;
+$company-dark: #4d3b3c;
+$company-dark-invert: #b2c4c3;
+
+$company-invert: #ad2e62;
+$company-light-invert: #678884;
+
+$primary: $company;
 
 $colors: mergeColorMaps(
   (
     'company': (
       $company,
       $company-invert,
+    ),
+    'company-dark': (
+      $company-dark,
+      $company-dark-invert,
     ),
     'company-light': (
       $company-light,

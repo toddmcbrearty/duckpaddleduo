@@ -1,7 +1,7 @@
 <template>
   <div class="is-flex service-container">
     <div>
-      <div class="title has-text-centered">Services</div>
+      <div class="title has-text-centered">Services We Provide</div>
       <div class="columns services">
         <a
           :href="`#detail-section-${service.name}`"

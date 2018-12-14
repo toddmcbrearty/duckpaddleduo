@@ -1,6 +1,6 @@
 @import './variables';
-@import './mixins.sass';
 @import 'bulma/bulma.sass';
+
 @import url('https://fonts.googleapis.com/css?family=Condiment|Delius+Unicase:400,700|Raleway:200,300,400,700|Source+Sans+Pro:300,400,700');
 
 @mixin font-condiment {
@@ -38,5 +38,5 @@
 body {
   @include raleway;
   font-size: 300;
-  background: #000;
+  background: $company-dark;
 }

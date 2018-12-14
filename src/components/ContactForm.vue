@@ -4,7 +4,8 @@
       <button class="delete" @click="hasError = false"></button>
       Please fill out all required fields.
     </div>
-    <form>
+    <form class="box">
+      <div class="subtitle">Send us a message</div>
       <div class="columns">
         <div class="column is-half">
           <div class="field">
@@ -62,10 +63,10 @@
 
       <div class="field is-grouped has-text-right">
         <div class="control">
-          <button class="button is-primary" @click.stop="submit()">Submit</button>
+          <button class="button is-success" @click.stop="submit()">Submit</button>
         </div>
         <div class="control">
-          <button class="button is-link">Reset</button>
+          <button class="button is-text" @click.stop="reset()">Reset</button>
         </div>
       </div>
     </form>
@@ -96,6 +97,12 @@ export default {
   },
 
   methods: {
+    reset() {
+      this.email = "";
+      this.name = "";
+      this.message = "";
+    },
+
     submit() {
       if (this.email === "" && this.name === "" && this.message === "") {
         this.hasError = true;
@@ -126,6 +133,8 @@ export default {
 </script>
 
 <style lang="scss" >
+@import "../assets/scss/bootstrap.scss";
+
 .required::after {
   content: "*";
   font-size: 1.3rem;
