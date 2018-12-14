@@ -1,7 +1,7 @@
 <template>
   <div
     :id="`detail-section-${service.name}`"
-    class="hero-section is-flex"
+    class="hero-section is-flex-tablet"
     :class="{'reversed': reversed}"
   >
     <a :name="`detail-section-${section}`"></a>
@@ -9,7 +9,8 @@
       <h2 class="title has-text-centered" v-text="service.name"></h2>
       <div class="description" v-html="service.description"></div>
     </div>
-    <div class="image-container">
+
+    <div class="image-container is-hidden-mobile">
       <div class="image-overlay" :class="{'reversed': reversed}"></div>
       <figure class="image">
         <img :src="getImage">
