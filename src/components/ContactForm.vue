@@ -62,10 +62,10 @@
 
       <div class="field is-grouped has-text-right">
         <div class="control">
-          <button class="button is-company" @click.stop="submit()">Submit</button>
+          <button class="button is-primary" @click.stop="submit()">Submit</button>
         </div>
         <div class="control">
-          <button class="button is-text">Reset</button>
+          <button class="button is-link">Reset</button>
         </div>
       </div>
     </form>
