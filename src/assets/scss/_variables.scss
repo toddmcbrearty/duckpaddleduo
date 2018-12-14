@@ -6,11 +6,11 @@ $company-1: #a3c1ad;
 $company-3: #317873;
 $company-4: #49796b;
 
-$company-light: silver;
-$company: #5f9ea0;
+$company-light: #e5f8ee;
+$company: #52d19d;
 
-$company-invert: findColorInvert($company);
-$company-light-invert: findColorInvert($company-light);
+$company-invert: #ff24ad;
+$company-light-invert: $black;
 
 $colors: mergeColorMaps(
   (

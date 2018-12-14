@@ -61,7 +61,6 @@ $height: 400px;
 .hero-section {
   justify-self: center;
   height: $height;
-  margin: 0.5em auto;
   background: white;
 
   .text {

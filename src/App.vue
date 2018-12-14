@@ -1,9 +1,13 @@
 <template>
   <div class="main container">
     <logo class="has-background-company-light"/>
-    <call-board/>
-    <services class="has-background-company-light"/>
-    <div class="new-section">
+
+    <section class="new-section">
+      <call-board/>
+    </section>
+
+    <section class="new-section">
+      <services class="has-background-company-light"/>
       <hero-section
         class="container"
         v-for="(service, index) in services"
@@ -11,13 +15,13 @@
         :key="service.name"
         :reversed="index%2 === 0"
       />
-    </div>
+    </section>
 
-    <div class="new-section container columns">
+    <section class="new-section container columns">
       <div class="column is-8 is-offset-2">
         <contact-form :services="services"></contact-form>
       </div>
-    </div>
+    </section>
 
     <big-footer :company="company"></big-footer>
   </div>
