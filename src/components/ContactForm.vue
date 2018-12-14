@@ -40,6 +40,12 @@
           </div>
         </div>
 
+        <div class="field">
+          <div class="control">
+            <vue-recaptcha :sitekey="key"></vue-recaptcha>
+          </div>
+        </div>
+
         <div class="column">
           <div class="field">
             <label class="label required">Message</label>
@@ -69,9 +75,12 @@
 
 <script>
 import store from "../store.js";
+import VueRecaptcha from "vue-recaptcha";
 
 export default {
   name: "ContactForm",
+
+  components: { VueRecaptcha },
 
   props: ["services"],
 
